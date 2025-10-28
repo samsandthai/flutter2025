@@ -43,7 +43,7 @@ class ProductPage extends StatelessWidget {
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 19,
-                  color: Colors.black87gi,
+                  color: Colors.black87,
                 ),
               ),
               subtitle: Text(

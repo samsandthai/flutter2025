@@ -39,11 +39,12 @@ class DeveloperPage extends StatelessWidget {
                 child: Hero(
                   tag: 'developer_image_tag',
                   child: CircleAvatar(
-                    radius: 60,
-                    // ຕ້ອງໃຊ້ຮູບຂອງນັກສຶກສາເອງ, ປ່ຽນ 'assets/my_image.jpg' ເປັນ Path ທີ່ຖືກຕ້ອງ
-                    // ສໍາລັບການທົດສອບ, ຂ້ອຍຈະໃຊ້ Placeholder Icon ກ່ອນ
-                    backgroundColor: Colors.white,
-                    child: Icon(Icons.person, size: 80, color: Colors.cyan),
+                    radius: 90,
+                   child:Image(image:AssetImage("/assets/images/monk.jpeg"),),
+                   
+                    
+                      
+                      
                     // backgroundImage: AssetImage('assets/my_image.jpg'), // ຖ້າຕ້ອງການໃຊ້ຮູບຈິງ
                   ),
                 ),
@@ -61,7 +62,7 @@ class DeveloperPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'ຊື່ ແລະ ນາມສະກຸນ:',
+                      'ຊື່ ແລະ ນາມສະກຸນ: ສາມແສນໄທ ແກ້ວດວງໃຈ',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -70,7 +71,7 @@ class DeveloperPage extends StatelessWidget {
                     ),
                     SizedBox(height: 5),
                     Text(
-                      'ທ້າວ/ນາງ [ຊື່ ນາມສະກຸນ ນັກສຶກສາ]',
+                      ' [ຊື່ ນາມສະກຸນ ນັກສຶກສາ ສາມແສນໄທ]',
                       style: TextStyle(fontSize: 18, color: Colors.blueGrey),
                     ),
                     Divider(height: 30, thickness: 1),
@@ -95,12 +96,12 @@ class DeveloperPage extends StatelessWidget {
                         ),
                         Chip(
                           avatar: Icon(Icons.school, color: Colors.orange),
-                          label: Text('ນັກສຶກສາ [ຊັ້ນຮຽນ]'),
+                          label: Text('ນັກສຶກສາ'),
                           backgroundColor: Colors.orange,
                         ),
                         Chip(
                           avatar: Icon(Icons.email, color: Colors.red),
-                          label: Text('[ອີເມວ/ເບີໂທ]'),
+                          label: Text('[Samsanthai@gmail.com]'),
                           backgroundColor: Colors.red,
                         ),
                       ],

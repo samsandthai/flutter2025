@@ -61,20 +61,13 @@ class _MainScreenState extends State<MainScreen> {
           children: <Widget>[
             // DrawerHeader ທີ່ສວຍງາມ
             UserAccountsDrawerHeader(
-              accountName: const Text('Flutter App Project'),
-              accountEmail: const Text('Student ID: [ລະຫັດນັກສຶກສາ]'),
+              accountName: const Text('samsanthai'),
+              accountEmail: const Text('Student ID: [101001000]'),
               currentAccountPicture: const CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Icon(Icons.flutter_dash, size: 50, color: Colors.teal),
               ),
-              decoration: const BoxDecoration(
-                color: Colors.teal,
-                image: DecorationImage(
-                  image: AssetImage('assets/drawer_bg.jpg'), // ຖ້າຕ້ອງການໃຊ້ຮູບພື້ນຫຼັງ
-                  fit: BoxFit.cover,
-                  opacity: 0.3,
-                ),
-              ),
+              
             ),
             // Home Page
             ListTile(
